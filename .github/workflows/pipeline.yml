@@ -13,6 +13,9 @@ jobs:
     permissions:
       contents: write
 
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
     steps:
     # Step 1: Download your code from GitHub 
     - name: Checkout Repository
@@ -33,7 +36,7 @@ jobs:
     # Step 4: Run python script to clean and scale the housing data
     - name: Run Automation Preprocessing
       run: |
-        python preprocessing/automate_Nama-siswa.py
+        python preprocessing/automate_Iqbal-Risky-Akbar.py
 
     # Step 5: Automatically check for data changes, then commit and push the updated dataset back to your repo
     - name: Commit and Push Clean Dataset
