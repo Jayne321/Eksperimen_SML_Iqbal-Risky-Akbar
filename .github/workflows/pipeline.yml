@@ -10,9 +10,9 @@ jobs:
   preprocess_job:
     runs-on: ubuntu-latest
 
-    permission:
-      contents: write  
-      
+    permissions:
+      contents: write
+
     steps:
     # Step 1: Download your code from GitHub 
     - name: Checkout Repository
